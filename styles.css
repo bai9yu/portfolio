@@ -342,10 +342,10 @@ video {
 
 .about-layout {
   display: grid;
-  grid-template-columns: minmax(280px, 390px) minmax(0, 1fr);
-  gap: clamp(28px, 5vw, 72px);
+  grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+  gap: clamp(28px, 4.2vw, 58px);
   align-items: start;
-  max-width: 1380px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -417,13 +417,8 @@ video {
   margin-top: 28px;
 }
 
-.resume-actions {
-  justify-content: flex-start;
-  margin-top: 24px;
-}
-
 .resume-inline {
-  margin-top: 22px;
+  margin-top: 28px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -435,12 +430,12 @@ video {
   width: 100%;
   height: auto;
   border: 0;
-  border-radius: 18px;
+  border-radius: 0;
   background: #fff;
 }
 
 .page-heading {
-  max-width: 980px;
+  max-width: 1320px;
   margin: 0 auto 34px;
 }
 
@@ -690,7 +685,7 @@ video {
 .story-timeline::before {
   content: "";
   position: absolute;
-  left: 122px;
+  left: 150px;
   top: 16px;
   bottom: 16px;
   width: 2px;
@@ -700,15 +695,15 @@ video {
 .story-timeline li {
   position: relative;
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
-  gap: 48px;
+  grid-template-columns: 124px minmax(0, 1fr);
+  gap: 42px;
   padding: 24px;
 }
 
 .story-timeline li::before {
   content: "";
   position: absolute;
-  left: 115px;
+  left: 143px;
   top: 34px;
   width: 16px;
   height: 16px;
@@ -720,7 +715,7 @@ video {
 .story-timeline time {
   color: var(--accent);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 950;
 }
 
@@ -738,14 +733,16 @@ video {
 
 .closing-note p {
   margin: 0;
-  font-size: clamp(20px, 2vw, 28px);
+  font-size: clamp(17px, 1.28vw, 22px);
   font-weight: 850;
-  line-height: 1.75;
+  line-height: 1.55;
+  white-space: nowrap;
 }
 
 .timeline-motto {
   max-width: 1280px;
-  font-size: clamp(40px, 7vw, 96px);
+  font-size: clamp(30px, 3.25vw, 44px);
+  white-space: nowrap;
 }
 
 .rise-in {
@@ -892,4 +889,5 @@ video {
   .story-timeline li::before {
     display: none;
   }
+
 }

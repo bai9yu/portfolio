@@ -1,26 +1,3 @@
-const resumeToggle = document.querySelector("[data-resume-toggle]");
-const resumePanel = document.querySelector("[data-resume-panel]");
-
-function setResumePanel(open) {
-  if (!resumePanel) return;
-  resumePanel.hidden = !open;
-  resumePanel.classList.toggle("open", open);
-  resumePanel.setAttribute("aria-hidden", String(!open));
-  if (resumeToggle) {
-    resumeToggle.textContent = open ? "收起简历" : "查看简历";
-  }
-}
-
-if (resumeToggle && resumePanel) {
-  resumeToggle.addEventListener("click", () => {
-    setResumePanel(!resumePanel.classList.contains("open"));
-  });
-
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") setResumePanel(false);
-  });
-}
-
 const slides = Array.from(document.querySelectorAll(".award-slide"));
 const prevButton = document.querySelector(".carousel-btn.prev");
 const nextButton = document.querySelector(".carousel-btn.next");
