@@ -11,13 +11,15 @@ function setResumePanel(open) {
   }
 }
 
-resumeToggle?.addEventListener("click", () => {
-  setResumePanel(!resumePanel?.classList.contains("open"));
-});
+if (resumeToggle && resumePanel) {
+  resumeToggle.addEventListener("click", () => {
+    setResumePanel(!resumePanel.classList.contains("open"));
+  });
 
-window.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") setResumePanel(false);
-});
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setResumePanel(false);
+  });
+}
 
 const slides = Array.from(document.querySelectorAll(".award-slide"));
 const prevButton = document.querySelector(".carousel-btn.prev");
