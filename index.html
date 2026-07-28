@@ -3,344 +3,77 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>小白好白 | 白昱萱科研作品集</title>
-    <meta
-      name="description"
-      content="小白好白：白昱萱的科研作品集，展示联邦学习、边缘智能、科研智能体、论文专利、竞赛项目、社会实践与科研简历。"
-    />
+    <title>小白好白 | 白昱萱</title>
+    <meta name="description" content="白昱萱的科研作品集，展示联邦学习、边缘智能、科研智能体、论文专利、竞赛经历、奖项证明与科研简历。" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="小白好白首页">
-        <span class="brand-mark">白</span>
-        <span>小白好白</span>
-      </a>
-      <nav class="nav" aria-label="页面导航">
-        <a href="#research">科研成果</a>
-        <a href="#competitions">竞赛</a>
-        <a href="#project">项目</a>
-        <a href="#practice">实践</a>
-        <a href="#awards">奖项</a>
-        <a href="#resume">简历</a>
-        <a href="#timeline">时间线</a>
-      </nav>
-    </header>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="site-title" href="index.html">小白好白</a>
+        <nav class="nav" aria-label="主导航">
+          <a class="active" href="index.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="competitions.html">Competitions</a>
+          <a href="projects.html">Project</a>
+          <a href="awards.html">Awards</a>
+          <a href="timeline.html">Timeline</a>
+        </nav>
+      </header>
 
-    <main id="top">
-      <section class="hero-section">
-        <div class="hero-copy">
-          <p class="eyebrow">Research Portfolio</p>
-          <h1>小白好白</h1>
-          <p class="hero-lead">
-            白昱萱的科研作品集。聚焦联邦学习、持续学习、半监督学习与边缘智能优化，也尝试把大模型智能体落到真实科研工作流中。
-          </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="#resume">查看科研简历</a>
-            <a class="secondary-action" href="https://github.com/bai9yu" target="_blank" rel="noreferrer">GitHub</a>
+      <main class="profile-layout">
+        <aside class="identity-card fade-in">
+          <img class="portrait" src="assets/images/hero-life.jpeg" alt="白昱萱生活照" />
+          <h1>白昱萱</h1>
+          <p class="role">M.S. Student · Information and Communication Engineering</p>
+          <p class="school">北京交通大学 电子信息工程学院</p>
+          <div class="mini-links">
+            <a href="https://github.com/bai9yu" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://bai9yu.github.io/research-assistant/" target="_blank" rel="noreferrer">Agent</a>
+            <a href="https://github.com/bai9yu/fed-continual-learning" target="_blank" rel="noreferrer">Code</a>
           </div>
-          <div class="hero-tags" aria-label="研究方向">
-            <span>联邦学习</span>
-            <span>联邦持续学习</span>
-            <span>半监督学习</span>
-            <span>边缘智能优化</span>
-            <span>大模型智能体</span>
-          </div>
-        </div>
-        <aside class="profile-panel" aria-label="基本信息">
-          <img class="profile-photo" src="assets/images/profile.jpg" alt="白昱萱证件照" />
-          <div class="profile-card">
-            <img class="school-logo" src="assets/images/bjtu-logo.png" alt="" />
-            <h2>白昱萱</h2>
-            <p>北京交通大学 信息与通信工程专业硕士研究生</p>
-            <dl>
-              <div><dt>教育背景</dt><dd>北京交通大学 / 电子信息工程学院</dd></div>
-              <div><dt>研究平台</dt><dd>先进轨道交通自主运行全国重点实验室</dd></div>
-              <div><dt>籍贯</dt><dd>山西太原</dd></div>
-              <div><dt>性格标签</dt><dd>天蝎座 / ISFJ</dd></div>
-              <div><dt>兴趣爱好</dt><dd>跳舞、打羽毛球</dd></div>
-            </dl>
-          </div>
+          <section class="side-block">
+            <h2>Research Interests</h2>
+            <p>Federated Learning</p>
+            <p>Continual Learning</p>
+            <p>Semi-supervised Learning</p>
+            <p>Edge Intelligence</p>
+            <p>AI Research Agent</p>
+          </section>
         </aside>
-      </section>
 
-      <section class="section intro-section">
-        <div class="section-heading">
-          <p class="eyebrow">Focus</p>
-          <h2>研究方向与能力画像</h2>
+        <section class="main-card fade-in delay-1">
+          <p class="eyebrow">About</p>
+          <h2>面向动态边缘环境的分布式智能学习与科研智能体实践</h2>
           <p>
-            研究围绕物联网和边缘计算场景中的动态数据演化、分布异构、标注资源不足和通信计算受限问题展开，关注如何让分布式智能模型更及时、更稳定、更高效地完成持续更新。
+            我是北京交通大学信息与通信工程专业硕士研究生，中共党员，来自山西太原。目前主要研究联邦学习、联邦持续学习、半监督学习与边缘智能优化，关注动态非独立同分布数据、模型持续更新、无标注数据利用和通信计算资源受限条件下的智能模型训练效率。
           </p>
-        </div>
-        <div class="focus-grid">
-          <article>
-            <strong>动态非独立同分布建模</strong>
-            <span>刻画边缘设备数据随时间变化带来的模型漂移与知识遗忘问题。</span>
-          </article>
-          <article>
-            <strong>设备选择与资源优化</strong>
-            <span>结合数据价值、集体代表性和无线资源约束设计联邦学习调度策略。</span>
-          </article>
-          <article>
-            <strong>无标注数据高效利用</strong>
-            <span>在半监督联邦学习中平衡伪标签数量、质量和采样方差。</span>
-          </article>
-          <article>
-            <strong>科研智能体工作流</strong>
-            <span>探索论文检索、阅读、知识入库、热点监测和科研画像的一体化辅助。</span>
-          </article>
-        </div>
-      </section>
+          <p>
+            除算法研究外，我也在探索大模型智能体在科研流程中的应用，例如论文检索、论文阅读、知识入库、热点监测、研究方向分析和科研画像生成，希望把 AI 从一次性问答工具推进为能持续沉淀科研过程的工作台。
+          </p>
 
-      <section class="section research-section" id="research">
-        <div class="section-heading">
-          <p class="eyebrow">Papers & Patent</p>
-          <h2>论文与专利</h2>
-        </div>
-        <div class="publication-grid">
-          <article class="publication-card">
-            <img src="assets/thumbs/fedteddi.png" alt="FedTeddi 论文首页预览" />
-            <div>
-              <p class="card-kicker">ICPADS 2025 / 第一作者</p>
-              <h3>FedTeddi: Temporal Drift and Divergence Aware Scheduling for Timely Federated Edge Learning</h3>
-              <p>
-                面向动态非独立同分布数据和通信资源受限的联邦持续学习场景，提出基于时间漂移与集体散度的数据感知调度机制，联合优化设备选择和带宽分配。
-              </p>
-              <ul>
-                <li>在 CIFAR-10 / CIFAR-100 上，相比 Random 达到目标精度所需时间分别降低 58.4% 和 49.2%。</li>
-                <li>关注模型及时适应新数据，同时保持历史知识。</li>
-              </ul>
-              <div class="link-row">
-                <a href="assets/papers/fedteddi.pdf" target="_blank" rel="noreferrer">查看论文</a>
-                <a href="https://doi.org/10.1109/ICPADS67057.2025.11322874" target="_blank" rel="noreferrer">DOI</a>
-                <a href="https://github.com/bai9yu/fed-continual-learning" target="_blank" rel="noreferrer">代码仓库</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="publication-card">
-            <img src="assets/thumbs/cats.png" alt="CATS 论文首页预览" />
-            <div>
-              <p class="card-kicker">IEEE Communications Magazine / 在投</p>
-              <h3>CATS: Collective and Temporal Synergy for Timely Model Updating in Federated Continual Learning</h3>
-              <p>
-                面向边缘环境中的数据持续演化、设备异构和资源约束，构建群体与时间协同框架，评估分布式数据价值并扩展到半监督学习场景。
-              </p>
-              <ul>
-                <li>联合考虑时间漂移和多设备数据互补关系，提高高价值设备选择质量。</li>
-                <li>持续学习任务中，相比 Random 收敛速度提升 44%。</li>
-              </ul>
-              <div class="link-row">
-                <a href="assets/papers/cats.pdf" target="_blank" rel="noreferrer">查看论文</a>
-                <a href="https://github.com/bai9yu/fed-continual-learning" target="_blank" rel="noreferrer">代码仓库</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="publication-card">
-            <img src="assets/thumbs/patent.png" alt="联邦持续学习专利公布通知书预览" />
-            <div>
-              <p class="card-kicker">发明专利 / CN120387526A</p>
-              <h3>一种触发式联邦持续学习调度与关键数据共享的方法</h3>
-              <p>
-                通过边缘设备性能监测、服务器触发判断、关键数据样本筛选和联邦聚合，减少不必要的通信与计算消耗，提高动态环境下系统整体效率。
-              </p>
-              <div class="link-row">
-                <a href="assets/patents/patent-publication-notice.pdf" target="_blank" rel="noreferrer">公布通知书</a>
-                <a href="assets/patents/patent-disclosure.pdf" target="_blank" rel="noreferrer">交底书</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section competition-section" id="competitions">
-        <div class="section-heading">
-          <p class="eyebrow">Competitions</p>
-          <h2>竞赛经历</h2>
-          <p>竞赛部分重点展示项目背景、方案思路、关键难点、个人负责内容和复盘思考。公开仓库中保留轻量版 PPT/PDF 与获奖证明。</p>
-        </div>
-        <div class="case-grid">
-          <article class="case-card">
-            <img src="assets/thumbs/graduate-electronics.png" alt="研电赛项目材料预览" />
-            <div class="case-content">
-              <p class="card-kicker">2026.03 - 2026.08 / 华北赛区初赛一等奖</p>
-              <h3>研电赛：天枢 - 融合控制安全与虚实共演的空地群智决策系统</h3>
-              <dl class="detail-list">
-                <div><dt>背景</dt><dd>森林巡检、灾害救援等开放环境中，无人机、无人车和移动机器人需要协同完成复杂任务。</dd></div>
-                <div><dt>实现想法</dt><dd>结合大模型任务理解、多智能体协同调度、数字孪生预演和安全控制，实现任务分解、能力匹配与虚实验证。</dd></div>
-                <div><dt>难点</dt><dd>异构智能体能力不同、场景动态变化强，任务规划需要兼顾协同效率和安全约束。</dd></div>
-                <div><dt>负责内容</dt><dd>负责多智能体协同部分技术设计，参与任务分解、能力匹配、协同执行机制设计，以及商业计划书和汇报材料整理。</dd></div>
-                <div><dt>思考</dt><dd>复杂系统的价值不只在单点算法，而在“任务理解 - 协同决策 - 安全验证 - 商业落地”的完整闭环。</dd></div>
-              </dl>
-              <div class="link-row">
-                <a href="assets/competitions/graduate-electronics-deck.pdf" target="_blank" rel="noreferrer">展示材料</a>
-                <a href="assets/competitions/graduate-electronics-business-plan.pdf" target="_blank" rel="noreferrer">商业计划书</a>
-                <a href="assets/competitions/graduate-electronics-award.pdf" target="_blank" rel="noreferrer">获奖证明</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="case-card">
-            <img src="assets/thumbs/internet-plus.png" alt="互联网+商业计划书预览" />
-            <div class="case-content">
-              <p class="card-kicker">2023.03 - 2023.08 / 北京赛区主赛道二等奖</p>
-              <h3>互联网+：全自动光伏清洗运载推送装置</h3>
-              <dl class="detail-list">
-                <div><dt>背景</dt><dd>大型光伏电站中，清洗机器人跨阵列连续作业能力不足，人工搬运和设备调度成本较高。</dd></div>
-                <div><dt>实现想法</dt><dd>设计运载机器人与多台清洗机器人协同工作，由运载机器人完成运输、投放、回收和跨阵列转移。</dd></div>
-                <div><dt>难点</dt><dd>需要把工程结构、应用场景、商业模式和答辩表达统一起来，让技术方案具备可理解的落地价值。</dd></div>
-                <div><dt>负责内容</dt><dd>负责整体方案梳理和技术路线设计，参与机器人系统结构设计、创新点提炼、申报书、商业计划书和答辩材料撰写。</dd></div>
-                <div><dt>思考</dt><dd>技术展示要服务真实问题，优秀的竞赛项目需要同时说清“为什么需要、怎么实现、如何推广”。</dd></div>
-              </dl>
-              <div class="link-row">
-                <a href="assets/competitions/internet-plus-pv-cleaning.pptx" target="_blank" rel="noreferrer">PPT</a>
-                <a href="assets/competitions/internet-plus-business-plan.pdf" target="_blank" rel="noreferrer">商业计划书</a>
-                <a href="assets/competitions/internet-plus-award.pdf" target="_blank" rel="noreferrer">获奖证明</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section project-section" id="project">
-        <div class="section-heading">
-          <p class="eyebrow">Project</p>
-          <h2>项目经历：科研智能体“研途喵”</h2>
-          <p>一个面向高校科研全过程的 AI 工作台，将论文检索、智能阅读、知识入库、热点监测、方向分析、学者追踪和科研画像串联起来。</p>
-        </div>
-        <div class="project-layout">
-          <div class="project-copy">
-            <dl class="detail-list compact">
-              <div><dt>背景</dt><dd>科研资料分散、论文阅读效率低、知识难沉淀，单次 AI 问答难以支持长期科研管理。</dd></div>
-              <div><dt>实现想法</dt><dd>基于 Coze 平台融合大模型、多智能体工作流和知识管理，设计多模块协同的科研辅助平台。</dd></div>
-              <div><dt>难点</dt><dd>多工作流状态衔接、智能体输出稳定性、科研语义结构化，以及结果展示和可用性的平衡。</dd></div>
-              <div><dt>负责内容</dt><dd>负责科研画像模块设计、用户信息体系构建和系统整体功能规划，参与工作流、交互流程、架构设计与汇报材料撰写。</dd></div>
-              <div><dt>思考</dt><dd>科研智能体不应只是“回答问题”，而应成为能持续沉淀信息、辅助判断进展的过程管理工具。</dd></div>
-            </dl>
-            <div class="link-row">
-              <a href="https://bai9yu.github.io/research-assistant/" target="_blank" rel="noreferrer">查看项目展示页</a>
-              <a href="https://github.com/bai9yu/research-assistant" target="_blank" rel="noreferrer">查看代码仓库</a>
-            </div>
+          <div class="info-grid">
+            <article><span>Education</span><strong>北京交通大学 · 信息与通信工程硕士</strong></article>
+            <article><span>Lab</span><strong>先进轨道交通自主运行全国重点实验室</strong></article>
+            <article><span>Profile</span><strong>山西太原 / 天蝎座 / ISFJ</strong></article>
+            <article><span>Interests</span><strong>跳舞、打羽毛球</strong></article>
           </div>
-          <div class="screen-mosaic" aria-label="研途喵功能截图">
-            <img src="assets/project/research-assistant-profile.jpg" alt="科研画像页面截图" />
-            <img src="assets/project/research-assistant-paper-reading.jpg" alt="论文阅读页面截图" />
+
+          <div class="resume-actions">
+            <button class="primary-btn" type="button" data-resume-toggle>预览科研简历</button>
+            <a class="ghost-btn" href="assets/docs/research-resume.pdf" target="_blank" rel="noreferrer">下载科研简历</a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section practice-section" id="practice">
-        <div class="section-heading">
-          <p class="eyebrow">Social Practice</p>
-          <h2>社会实践：星星之火</h2>
-        </div>
-        <div class="practice-card">
-          <img src="assets/thumbs/xingxingzhihuo.png" alt="星星之火暑期实践调研报告预览" />
-          <div>
-            <p>
-              参与“星星之火”暑期社会实践团，通过调研、访谈、材料整理和成果汇报，把校园学习与社会观察连接起来。该经历获得社会实践评比第二名。
-            </p>
-            <dl class="detail-list compact">
-              <div><dt>背景</dt><dd>围绕社会基层实践与青年观察展开调研，关注实践现场中的真实问题和可传播成果。</dd></div>
-              <div><dt>负责内容</dt><dd>参与调研资料收集、报告内容整理、实践成果汇总和展示表达。</dd></div>
-              <div><dt>思考</dt><dd>社会实践训练了从真实场景提炼问题、组织材料和清晰表达的能力，也补充了科研之外的观察视角。</dd></div>
-            </dl>
-            <div class="link-row">
-              <a href="assets/practice/xingxingzhihuo-report.pdf" target="_blank" rel="noreferrer">查看调研报告</a>
-            </div>
+        <aside class="resume-drawer" data-resume-panel aria-hidden="true">
+          <div class="drawer-head">
+            <strong>科研简历预览</strong>
+            <button type="button" data-resume-close aria-label="关闭简历预览">×</button>
           </div>
-        </div>
-      </section>
-
-      <section class="section awards-section" id="awards">
-        <div class="section-heading">
-          <p class="eyebrow">Awards</p>
-          <h2>奖项与证明</h2>
-          <p>用图片轮播展示奖学金、竞赛、优秀毕业生、优秀共青团员和学生工作等证明材料。</p>
-        </div>
-        <div class="carousel" aria-label="奖项证明轮播">
-          <button class="carousel-btn prev" type="button" aria-label="上一张">‹</button>
-          <div class="carousel-track">
-            <figure class="award-slide active">
-              <img src="assets/thumbs/graduate-scholarship.png" alt="硕士一等学业奖学金证明" />
-              <figcaption>2024-2026 硕士一等学业奖学金</figcaption>
-            </figure>
-            <figure class="award-slide">
-              <img src="assets/thumbs/graduate-electronics-award.png" alt="研电赛一等奖证明" />
-              <figcaption>2026 研电赛商业计划书专项赛初赛一等奖</figcaption>
-            </figure>
-            <figure class="award-slide">
-              <img src="assets/thumbs/internet-plus-award.png" alt="互联网+二等奖证明" />
-              <figcaption>2023 互联网+ 北京赛区主赛道二等奖</figcaption>
-            </figure>
-            <figure class="award-slide">
-              <img src="assets/thumbs/outstanding-graduate.png" alt="优秀毕业生证明" />
-              <figcaption>2024 北京交通大学优秀毕业生</figcaption>
-            </figure>
-            <figure class="award-slide">
-              <img src="assets/thumbs/outstanding-league-member.png" alt="优秀共青团员证明" />
-              <figcaption>2026 校级优秀共青团员</figcaption>
-            </figure>
-            <figure class="award-slide">
-              <img src="assets/thumbs/party-branch-deputy.png" alt="党支部副书记证明" />
-              <figcaption>党支部副书记学生工作证明</figcaption>
-            </figure>
-          </div>
-          <button class="carousel-btn next" type="button" aria-label="下一张">›</button>
-        </div>
-      </section>
-
-      <section class="section resume-section" id="resume">
-        <div class="section-heading">
-          <p class="eyebrow">Resume</p>
-          <h2>科研简历</h2>
-          <p>简历可直接在线预览，也可以下载 PDF，方便面试官快速查看完整经历。</p>
-        </div>
-        <div class="resume-layout">
-          <div class="resume-preview">
-            <iframe src="assets/docs/research-resume.pdf#view=FitH" title="白昱萱科研简历 PDF 预览"></iframe>
-          </div>
-          <aside class="resume-summary">
-            <img src="assets/thumbs/resume.png" alt="科研简历首页缩略图" />
-            <h3>简历摘要</h3>
-            <ul>
-              <li>北京交通大学信息与通信工程专业硕士研究生，中共党员。</li>
-              <li>研究方向：联邦持续学习、半监督学习、边缘智能优化。</li>
-              <li>具备论文、专利、项目规划、技术文档和竞赛材料组织经验。</li>
-              <li>熟悉 Python、Office、Adobe Illustrator 等工具。</li>
-            </ul>
-            <a class="primary-action" href="assets/docs/research-resume.pdf" target="_blank" rel="noreferrer">下载科研简历</a>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section timeline-section" id="timeline">
-        <div class="section-heading">
-          <p class="eyebrow">Timeline</p>
-          <h2>时间线</h2>
-        </div>
-        <ol class="timeline">
-          <li><time>2021</time><span>参与“星星之火”暑期社会实践团，获得社会实践评比第二名。</span></li>
-          <li><time>2022.04</time><span>北京交通大学大学生智能汽车竞赛三等奖。</span></li>
-          <li><time>2022.06</time><span>北京交通大学大学生数学建模竞赛一等奖。</span></li>
-          <li><time>2022.06 - 2023.06</time><span>参与基于深度强化学习和障碍函数的跟驰模型构建，项目获大创市级立项。</span></li>
-          <li><time>2023.07</time><span>互联网+ 北京赛区主赛道二等奖：全自动光伏清洗运载推送装置。</span></li>
-          <li><time>2024.06</time><span>获北京交通大学优秀毕业生。</span></li>
-          <li><time>2024 - 2026</time><span>连续获得北京交通大学硕士一等学业奖学金。</span></li>
-          <li><time>2025.07</time><span>发明专利“一种触发式联邦持续学习调度与关键数据共享的方法”公布。</span></li>
-          <li><time>2025.10</time><span>FedTeddi 录用于 IEEE ICPADS 2025。</span></li>
-          <li><time>2026.03 - 2026.08</time><span>研电赛商业计划书专项赛：天枢项目获华北赛区初赛一等奖。</span></li>
-          <li><time>2026.05 - 2026.06</time><span>完成科研智能体平台“研途喵”的原型设计、功能规划和展示页整理。</span></li>
-        </ol>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>小白好白 / 白昱萱科研作品集</span>
-      <a href="#top">回到顶部</a>
-    </footer>
-
+          <iframe src="assets/docs/research-resume.pdf#view=FitH" title="白昱萱科研简历预览"></iframe>
+        </aside>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

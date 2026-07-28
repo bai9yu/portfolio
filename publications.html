@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications | 小白好白</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="site-title" href="index.html">小白好白</a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html">About</a>
+          <a class="active" href="publications.html">Publications</a>
+          <a href="competitions.html">Competitions</a>
+          <a href="projects.html">Project</a>
+          <a href="awards.html">Awards</a>
+          <a href="timeline.html">Timeline</a>
+        </nav>
+      </header>
+
+      <main class="content-page fade-in">
+        <section class="page-heading">
+          <p class="eyebrow">Papers & Patent</p>
+          <h1>论文与专利</h1>
+          <p>围绕动态边缘环境中的联邦持续学习、设备选择、无标注数据利用和关键数据共享开展研究。</p>
+        </section>
+
+        <section class="paper-list">
+          <article class="media-card">
+            <img src="assets/thumbs/fedteddi.png" alt="FedTeddi 论文首页预览" />
+            <div>
+              <p class="label">ICPADS 2025 · 第一作者</p>
+              <h2>FedTeddi: Temporal Drift and Divergence Aware Scheduling for Timely Federated Edge Learning</h2>
+              <p>针对边缘设备持续产生动态非独立同分布数据、通信资源受限、模型难以及时适应新数据和历史知识容易遗忘的问题，提出基于时间漂移与集体散度的数据感知调度机制。</p>
+              <ul>
+                <li>联合优化设备选择与无线带宽分配。</li>
+                <li>在 CIFAR-10 和 CIFAR-100 上，相比 Random 达到目标精度所需时间分别降低 58.4% 和 49.2%。</li>
+              </ul>
+              <div class="action-row">
+                <a href="assets/papers/fedteddi.pdf" target="_blank" rel="noreferrer">论文 PDF</a>
+                <a href="https://doi.org/10.1109/ICPADS67057.2025.11322874" target="_blank" rel="noreferrer">DOI</a>
+                <a href="https://github.com/bai9yu/fed-continual-learning" target="_blank" rel="noreferrer">代码仓库</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <img src="assets/thumbs/cats.png" alt="CATS 论文首页预览" />
+            <div>
+              <p class="label">IEEE Communications Magazine · 在投</p>
+              <h2>CATS: Collective and Temporal Synergy for Timely Model Updating in Federated Continual Learning</h2>
+              <p>面向物联网边缘环境中的数据持续演化、设备间数据异构和资源约束问题，提出群体与时间协同框架，联合刻画数据时效性与多设备数据互补关系。</p>
+              <ul>
+                <li>评估分布式数据价值，提升高价值设备选择质量。</li>
+                <li>扩展到半监督学习场景，平衡新旧样本伪标签数量与质量，持续学习任务中收敛速度提升 44%。</li>
+              </ul>
+              <div class="action-row">
+                <a href="assets/papers/cats.pdf" target="_blank" rel="noreferrer">论文 PDF</a>
+                <a href="https://github.com/bai9yu/fed-continual-learning" target="_blank" rel="noreferrer">代码仓库</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <img src="assets/thumbs/patent.png" alt="专利公布通知书预览" />
+            <div>
+              <p class="label">发明专利 · CN120387526A</p>
+              <h2>一种触发式联邦持续学习调度与关键数据共享的方法</h2>
+              <p>通过边缘设备持续监测、服务器触发判断、关键数据样本筛选和联邦聚合机制，减少不必要的通信与计算资源消耗，提高动态环境下系统整体效率。</p>
+              <div class="action-row">
+                <a href="assets/patents/patent-publication-notice.pdf" target="_blank" rel="noreferrer">公布通知书</a>
+                <a href="assets/patents/patent-disclosure.pdf" target="_blank" rel="noreferrer">专利交底书</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

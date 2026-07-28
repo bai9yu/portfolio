@@ -1,31 +1,24 @@
-const slides = Array.from(document.querySelectorAll(".award-slide"));
-const prevButton = document.querySelector(".carousel-btn.prev");
-const nextButton = document.querySelector(".carousel-btn.next");
-let activeIndex = 0;
-let timerId;
+const resumeToggle = document.querySelector("[data-resume-toggle]");
+const resumePanel = document.querySelector("[data-resume-panel]");
+const resumeClose = document.querySelector("[data-resume-close]");
 
-function showSlide(index) {
-  if (!slides.length) return;
-  activeIndex = (index + slides.length) % slides.length;
-  slides.forEach((slide, slideIndex) => {
-    slide.classList.toggle("active", slideIndex === activeIndex);
-  });
+function setResumePanel(open) {
+  if (!resumePanel) return;
+  resumePanel.classList.toggle("open", open);
+  resumePanel.setAttribute("aria-hidden", String(!open));
+  if (resumeToggle) {
+    resumeToggle.textContent = open ? "收起科研简历" : "预览科研简历";
+  }
 }
 
-function queueNext() {
-  window.clearInterval(timerId);
-  timerId = window.setInterval(() => showSlide(activeIndex + 1), 4200);
-}
-
-prevButton?.addEventListener("click", () => {
-  showSlide(activeIndex - 1);
-  queueNext();
+resumeToggle?.addEventListener("click", () => {
+  setResumePanel(!resumePanel?.classList.contains("open"));
 });
 
-nextButton?.addEventListener("click", () => {
-  showSlide(activeIndex + 1);
-  queueNext();
-});
+resumeClose?.addEventListener("click", () => setResumePanel(false));
 
-showSlide(0);
-queueNext();
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    setResumePanel(false);
+  }
+});
