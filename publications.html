@@ -3,41 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Publications | 小白好白</title>
+    <title>科研成果 | 白昱萱</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
     <div class="page-shell">
       <header class="topbar">
-        <a class="site-title" href="index.html">小白好白</a>
+        <a class="site-title" href="index.html">白昱萱</a>
         <nav class="nav" aria-label="主导航">
           <a href="index.html">About</a>
-          <a class="active" href="publications.html">Publications</a>
-          <a href="competitions.html">Competitions</a>
-          <a href="projects.html">Project</a>
+          <a class="active" href="publications.html">Research</a>
+          <a href="projects.html">Projects</a>
           <a href="awards.html">Awards</a>
           <a href="timeline.html">Timeline</a>
         </nav>
       </header>
 
-      <main class="content-page fade-in">
+      <main class="content-page rise-in">
         <section class="page-heading">
-          <p class="eyebrow">Papers & Patent</p>
-          <h1>论文与专利</h1>
-          <p>围绕动态边缘环境中的联邦持续学习、设备选择、无标注数据利用和关键数据共享开展研究。</p>
+          <p class="eyebrow">Research</p>
+          <h1>科研成果</h1>
+          <p>聚焦联邦持续学习、边缘智能、数据价值评估和资源受限环境下的模型及时更新。</p>
         </section>
 
-        <section class="paper-list">
-          <article class="media-card">
-            <img src="assets/thumbs/fedteddi.png" alt="FedTeddi 论文首页预览" />
+        <section class="research-stack">
+          <article class="feature-card">
+            <img class="doc-cover" src="assets/thumbs/fedteddi.png" alt="FedTeddi 论文首页预览" />
             <div>
-              <p class="label">ICPADS 2025 · 第一作者</p>
+              <p class="label">IEEE ICPADS 2025 · 第一作者 · 已录用并完成会议宣读</p>
               <h2>FedTeddi: Temporal Drift and Divergence Aware Scheduling for Timely Federated Edge Learning</h2>
-              <p>针对边缘设备持续产生动态非独立同分布数据、通信资源受限、模型难以及时适应新数据和历史知识容易遗忘的问题，提出基于时间漂移与集体散度的数据感知调度机制。</p>
-              <ul>
-                <li>联合优化设备选择与无线带宽分配。</li>
-                <li>在 CIFAR-10 和 CIFAR-100 上，相比 Random 达到目标精度所需时间分别降低 58.4% 和 49.2%。</li>
-              </ul>
+              <p class="quote">让模型更快发现有价值的新数据，也不轻易忘记过去。</p>
+              <div class="text-grid">
+                <section>
+                  <h3>研究背景</h3>
+                  <p>在联邦持续学习场景中，边缘设备的数据会持续到达并随时间动态变化，不同设备之间还存在明显的数据分布差异。与此同时，无线带宽和训练时延受到限制，传统设备选择方法难以及时发现真正具有学习价值的新数据。</p>
+                </section>
+                <section>
+                  <h3>核心方法</h3>
+                  <p>提出时间漂移与集体散度联合感知方法。时间漂移衡量设备当前数据相较于历史数据的变化程度，集体散度衡量被选择设备集合与全局数据分布之间的差异，并联合优化设备选择与无线带宽分配。</p>
+                </section>
+                <section>
+                  <h3>研究结果</h3>
+                  <p>在 CIFAR-10 和 CIFAR-100 数据集上，相比 Random 方法，达到目标精度所需时间分别降低 58.4% 和 49.2%，显著提高动态数据环境下的模型收敛速度与更新及时性。</p>
+                </section>
+              </div>
               <div class="action-row">
                 <a href="assets/papers/fedteddi.pdf" target="_blank" rel="noreferrer">论文 PDF</a>
                 <a href="https://doi.org/10.1109/ICPADS67057.2025.11322874" target="_blank" rel="noreferrer">DOI</a>
@@ -46,16 +57,26 @@
             </div>
           </article>
 
-          <article class="media-card">
-            <img src="assets/thumbs/cats.png" alt="CATS 论文首页预览" />
+          <article class="feature-card">
+            <img class="doc-cover" src="assets/thumbs/cats.png" alt="CATS 论文首页预览" />
             <div>
-              <p class="label">IEEE Communications Magazine · 在投</p>
+              <p class="label">IEEE Communications Magazine · 第二作者 · 当前在投</p>
               <h2>CATS: Collective and Temporal Synergy for Timely Model Updating in Federated Continual Learning</h2>
-              <p>面向物联网边缘环境中的数据持续演化、设备间数据异构和资源约束问题，提出群体与时间协同框架，联合刻画数据时效性与多设备数据互补关系。</p>
-              <ul>
-                <li>评估分布式数据价值，提升高价值设备选择质量。</li>
-                <li>扩展到半监督学习场景，平衡新旧样本伪标签数量与质量，持续学习任务中收敛速度提升 44%。</li>
-              </ul>
+              <p class="quote">不仅关注单个设备拥有什么，更关注一组设备能够共同贡献什么。</p>
+              <div class="text-grid">
+                <section>
+                  <h3>研究背景</h3>
+                  <p>物联网设备持续产生动态数据，但不同设备的数据分布、数据新鲜度和资源条件存在明显差异。如果仅依据单个设备的数据量或通信条件选择设备，难以保证所选设备能够共同代表全局数据。</p>
+                </section>
+                <section>
+                  <h3>核心方法</h3>
+                  <p>提出群体与时间协同框架，通过联合考虑数据的时间漂移与多设备数据之间的互补性，从设备群体角度评估分布式数据价值，并扩展至半监督场景。</p>
+                </section>
+                <section>
+                  <h3>研究结果</h3>
+                  <p>在持续学习任务中，相比 Random 方法，CATS 收敛速度提升 44%，能够更快适应持续变化的数据环境。</p>
+                </section>
+              </div>
               <div class="action-row">
                 <a href="assets/papers/cats.pdf" target="_blank" rel="noreferrer">论文 PDF</a>
                 <a href="https://github.com/bai9yu/fed-continual-learning" target="_blank" rel="noreferrer">代码仓库</a>
@@ -63,12 +84,26 @@
             </div>
           </article>
 
-          <article class="media-card">
-            <img src="assets/thumbs/patent.png" alt="专利公布通知书预览" />
+          <article class="feature-card">
+            <img class="doc-cover" src="assets/thumbs/patent.png" alt="专利公布通知书预览" />
             <div>
-              <p class="label">发明专利 · CN120387526A</p>
+              <p class="label">Patent · CN120387526A · 公开时间 2025-07-29</p>
               <h2>一种触发式联邦持续学习调度与关键数据共享的方法</h2>
-              <p>通过边缘设备持续监测、服务器触发判断、关键数据样本筛选和联邦聚合机制，减少不必要的通信与计算资源消耗，提高动态环境下系统整体效率。</p>
+              <p class="quote">只在真正需要时启动学习，只共享真正有价值的数据。</p>
+              <div class="text-grid">
+                <section>
+                  <h3>专利背景</h3>
+                  <p>传统联邦学习通常按照固定周期组织设备训练和模型聚合，即使模型性能较稳定或本地数据未发生明显变化，系统仍可能持续通信和计算，造成资源浪费。</p>
+                </section>
+                <section>
+                  <h3>核心方案</h3>
+                  <p>边缘设备持续进行环境数据采集与模型性能监测，服务器判断是否触发新一轮联邦学习，并优先选择持有关键数据的设备参与训练和关键数据共享。</p>
+                </section>
+                <section>
+                  <h3>专利价值</h3>
+                  <p>通过触发式训练、关键设备选择与关键数据共享，减少不必要的通信和计算开销，提高联邦持续学习系统的整体运行效率。</p>
+                </section>
+              </div>
               <div class="action-row">
                 <a href="assets/patents/patent-publication-notice.pdf" target="_blank" rel="noreferrer">公布通知书</a>
                 <a href="assets/patents/patent-disclosure.pdf" target="_blank" rel="noreferrer">专利交底书</a>

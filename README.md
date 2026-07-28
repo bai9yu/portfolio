@@ -1,17 +1,17 @@
 # 小白好白 | 白昱萱科研作品集
 
-这是一个面向 GitHub Pages 的静态个人作品集网站，展示白昱萱的基本信息、教育背景、研究方向、论文专利、竞赛经历、科研智能体项目、奖项证明、科研简历和时间线。
+这是一个面向 GitHub Pages 的静态个人作品集网站，展示白昱萱的基本信息、教育背景、研究方向、论文专利、项目经历、奖项证明、科研简历和时间线。
 
 ## 内容结构
 
 - `index.html`：作品集首页与科研简历预览
 - `publications.html`：论文与专利
-- `competitions.html`：竞赛经历
-- `projects.html`：科研智能体项目
-- `awards.html`：奖项与证明
+- `projects.html`：项目经历，包含科研智能体、研电赛与互联网+
+- `competitions.html`：旧竞赛入口，自动跳转至项目页
+- `awards.html`：奖项与证明轮播
 - `timeline.html`：时间线
 - `styles.css`：页面样式
-- `script.js`：首页科研简历预览脚本
+- `script.js`：首页科研简历预览与奖状轮播脚本
 - `assets/docs/`：科研简历 PDF
 - `assets/papers/`：FedTeddi、CATS 与论文证明
 - `assets/patents/`：专利证明材料
