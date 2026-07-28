@@ -23,6 +23,11 @@
 
 ## 发布建议
 
-建议将本目录内容作为 `bai9yu.github.io` 仓库根目录发布，这样主页地址为：
+当前仓库建议使用 `bai9yu/portfolio` 发布 GitHub Pages：
 
-https://bai9yu.github.io/
+- 仓库地址：https://github.com/bai9yu/portfolio
+- 页面地址：https://bai9yu.github.io/portfolio/
+
+GitHub Pages 设置路径：
+
+`Settings` → `Pages` → `Deploy from a branch` → `main` → `/root`
