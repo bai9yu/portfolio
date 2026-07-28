@@ -174,9 +174,18 @@ video {
   letter-spacing: 0;
 }
 
-.home-hero p {
+.home-subtitle {
   margin: 30px auto 0;
-  max-width: 760px;
+  max-width: 900px;
+  color: var(--ink);
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.home-position {
+  margin: 18px auto 0;
+  max-width: 920px;
   color: var(--muted);
   font-size: clamp(16px, 1.5vw, 20px);
   font-weight: 800;
@@ -233,6 +242,36 @@ video {
   transform: translateY(-2px);
   background: #fff;
   box-shadow: 0 12px 26px rgba(108, 76, 44, 0.12);
+}
+
+.resume-entry {
+  display: inline-flex;
+  margin-top: 24px;
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 950;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.resume-entry:hover {
+  color: var(--ink);
+  transform: translateX(4px);
+}
+
+.personal-tags {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  color: #5e5147;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.personal-tags span + span::before {
+  content: "｜";
+  margin-right: 12px;
+  color: rgba(102, 75, 50, 0.32);
 }
 
 .personality-card,
