@@ -144,9 +144,9 @@ video {
   display: grid;
   justify-items: center;
   align-content: start;
-  gap: 30px;
+  gap: 36px;
   min-height: calc(100vh - 134px);
-  padding: clamp(54px, 8vw, 118px) clamp(28px, 6vw, 96px) clamp(42px, 7vw, 86px);
+  padding: clamp(46px, 7vw, 92px) clamp(28px, 6vw, 96px) clamp(42px, 7vw, 86px);
   text-align: center;
 }
 
@@ -156,12 +156,12 @@ video {
 }
 
 .home-avatar {
-  width: clamp(108px, 12vw, 152px);
-  height: clamp(108px, 12vw, 152px);
+  width: clamp(110px, 13vw, 164px);
+  height: clamp(110px, 13vw, 164px);
   border: 6px solid rgba(255, 255, 255, 0.88);
   border-radius: 999px;
   object-fit: cover;
-  object-position: 62% center;
+  object-position: center;
   box-shadow: 0 0 0 12px rgba(125, 155, 114, 0.07), 0 20px 54px rgba(108, 76, 44, 0.16);
 }
 
@@ -175,10 +175,10 @@ video {
 }
 
 .home-hero p {
-  margin: 14px auto 0;
+  margin: 30px auto 0;
   max-width: 760px;
   color: var(--muted);
-  font-size: clamp(17px, 1.8vw, 22px);
+  font-size: clamp(16px, 1.5vw, 20px);
   font-weight: 800;
   line-height: 1.65;
 }
@@ -187,19 +187,37 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  margin-top: 26px;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
 }
 
 .home-actions a {
-  min-height: 42px;
-  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(142px, 15vw, 180px);
+  height: 58px;
+  padding: 0 18px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
   color: var(--ink);
   font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-actions a:nth-child(1) {
+  background: #fff6ec;
+}
+
+.home-actions a:nth-child(2) {
+  background: #f1f6e9;
+}
+
+.home-actions a:nth-child(3) {
+  background: #f8edf1;
 }
 
 .home-actions a:hover {
@@ -223,8 +241,11 @@ video {
 }
 
 .personality-card {
-  width: min(100%, 1180px);
-  padding: clamp(28px, 4.2vw, 50px);
+  width: min(100%, 1020px);
+  padding: 4px clamp(18px, 4vw, 42px) 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .personality-card h2,
@@ -237,16 +258,16 @@ video {
 }
 
 .personality-card p {
-  max-width: 980px;
+  max-width: 900px;
   margin: 0 auto;
   color: var(--muted);
-  font-size: clamp(17px, 1.6vw, 22px);
-  font-weight: 760;
-  line-height: 1.9;
+  font-size: clamp(15px, 1.25vw, 18px);
+  font-weight: 720;
+  line-height: 1.86;
 }
 
 .personality-card p + p {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .eyebrow,
@@ -263,7 +284,7 @@ video {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .tag-cloud.centered {
@@ -271,11 +292,12 @@ video {
 }
 
 .tag-cloud span {
-  padding: 9px 14px;
+  padding: 7px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.62);
   color: #5e5147;
+  font-size: 14px;
   font-weight: 900;
 }
 
