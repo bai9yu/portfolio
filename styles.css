@@ -185,7 +185,7 @@ video {
 
 .home-actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -197,6 +197,7 @@ video {
   align-items: center;
   justify-content: center;
   width: clamp(142px, 15vw, 180px);
+  flex: 0 0 auto;
   height: 58px;
   padding: 0 18px;
   border: 1px solid var(--line);
