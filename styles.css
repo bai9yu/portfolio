@@ -143,27 +143,69 @@ video {
 .home-center {
   display: grid;
   justify-items: center;
-  align-content: center;
-  gap: 34px;
+  align-content: start;
+  gap: 30px;
   min-height: calc(100vh - 134px);
-  padding: clamp(36px, 6vw, 84px);
+  padding: clamp(54px, 8vw, 118px) clamp(28px, 6vw, 96px) clamp(42px, 7vw, 86px);
   text-align: center;
 }
 
-.hero-title h1 {
+.home-hero {
+  display: grid;
+  justify-items: center;
+}
+
+.home-avatar {
+  width: clamp(108px, 12vw, 152px);
+  height: clamp(108px, 12vw, 152px);
+  border: 6px solid rgba(255, 255, 255, 0.88);
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: 62% center;
+  box-shadow: 0 0 0 12px rgba(125, 155, 114, 0.07), 0 20px 54px rgba(108, 76, 44, 0.16);
+}
+
+.home-hero h1 {
   margin: 0;
+  margin-top: 28px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(56px, 9vw, 128px);
-  line-height: 1.02;
+  font-size: clamp(38px, 6vw, 72px);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
-.hero-title p {
-  margin: 20px auto 0;
-  max-width: 1060px;
+.home-hero p {
+  margin: 14px auto 0;
+  max-width: 760px;
   color: var(--muted);
-  font-size: clamp(20px, 2.2vw, 31px);
+  font-size: clamp(17px, 1.8vw, 22px);
+  font-weight: 800;
+  line-height: 1.65;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.home-actions a {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
   font-weight: 900;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-actions a:hover {
+  transform: translateY(-2px);
+  background: #fff;
+  box-shadow: 0 12px 26px rgba(108, 76, 44, 0.12);
 }
 
 .personality-card,
@@ -181,8 +223,8 @@ video {
 }
 
 .personality-card {
-  width: min(100%, 1300px);
-  padding: clamp(28px, 5vw, 58px);
+  width: min(100%, 1180px);
+  padding: clamp(28px, 4.2vw, 50px);
 }
 
 .personality-card h2,
@@ -195,12 +237,16 @@ video {
 }
 
 .personality-card p {
-  max-width: 1120px;
-  margin: 26px auto 0;
+  max-width: 980px;
+  margin: 0 auto;
   color: var(--muted);
-  font-size: clamp(18px, 1.8vw, 27px);
-  font-weight: 750;
-  line-height: 1.85;
+  font-size: clamp(17px, 1.6vw, 22px);
+  font-weight: 760;
+  line-height: 1.9;
+}
+
+.personality-card p + p {
+  margin-top: 20px;
 }
 
 .eyebrow,
@@ -233,7 +279,6 @@ video {
   font-weight: 900;
 }
 
-.enter-link,
 .primary-action,
 .secondary-action,
 .action-row a,
@@ -253,7 +298,6 @@ video {
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.enter-link:hover,
 .primary-action:hover,
 .secondary-action:hover,
 .action-row a:hover,
@@ -753,8 +797,8 @@ video {
     padding: 24px 18px 34px;
   }
 
-  .hero-title h1 {
-    font-size: clamp(44px, 14vw, 68px);
+  .home-hero h1 {
+    font-size: clamp(34px, 11vw, 50px);
   }
 
   .about-sidebar {
