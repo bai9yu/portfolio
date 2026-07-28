@@ -183,58 +183,6 @@ video {
   line-height: 1.35;
 }
 
-.home-actions {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-top: 34px;
-}
-
-.home-actions a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: clamp(142px, 15vw, 180px);
-  flex: 0 0 auto;
-  height: 58px;
-  padding: 0 18px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--ink);
-  font-weight: 900;
-  line-height: 1;
-  white-space: nowrap;
-  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
-}
-
-.home-actions a:nth-child(1) {
-  background: #fff6ec;
-}
-
-.home-actions a:nth-child(2) {
-  background: #f1f6e9;
-}
-
-.home-actions a:nth-child(3) {
-  background: #f8edf1;
-}
-
-.home-actions a:nth-child(4) {
-  background: #fff4d8;
-}
-
-.home-actions a:nth-child(5) {
-  background: #edf4f7;
-}
-
-.home-actions a:hover {
-  transform: translateY(-2px);
-  background: #fff;
-  box-shadow: 0 12px 26px rgba(108, 76, 44, 0.12);
-}
-
 .resume-entry {
   display: inline-flex;
   margin-top: 24px;
