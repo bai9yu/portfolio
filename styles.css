@@ -197,20 +197,45 @@ video {
   transform: translateX(4px);
 }
 
-.personal-tags {
+.home-shortcuts {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 14px;
   margin-top: 24px;
+}
+
+.home-shortcuts a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 128px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.62);
   color: #5e5147;
   font-size: 15px;
   font-weight: 900;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.personal-tags span + span::before {
-  content: "｜";
-  margin-right: 12px;
-  color: rgba(102, 75, 50, 0.32);
+.home-shortcuts a:nth-child(1) {
+  background: #fff6ec;
+}
+
+.home-shortcuts a:nth-child(2) {
+  background: #f1f6e9;
+}
+
+.home-shortcuts a:nth-child(3) {
+  background: #f8edf1;
+}
+
+.home-shortcuts a:hover {
+  transform: translateY(-2px);
+  background: #fff;
+  box-shadow: 0 12px 26px rgba(108, 76, 44, 0.12);
 }
 
 .personality-card,
