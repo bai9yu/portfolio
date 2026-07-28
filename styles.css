@@ -445,6 +445,12 @@ video {
   font-size: 18px;
 }
 
+.page-heading .single-line-copy {
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(16px, 1.12vw, 18px);
+}
+
 .research-stack,
 .project-stack {
   display: grid;
