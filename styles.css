@@ -448,7 +448,8 @@ video {
 .page-heading .single-line-copy {
   max-width: none;
   white-space: nowrap;
-  font-size: clamp(16px, 1.12vw, 18px);
+  font-size: clamp(12px, 0.78vw, 14px);
+  line-height: 1.6;
 }
 
 .research-stack,
