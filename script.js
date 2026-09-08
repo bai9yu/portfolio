@@ -77,3 +77,17 @@ if(honorGallery){
  stage.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();stage.focus({preventScroll:true});step(e.key==='ArrowLeft'?-1:1);}});
  honorGallery.classList.add('podium-ready');rebuild();
 }
+
+// Chapter planets provide the same direct exploration on every inner page.
+document.querySelectorAll('[data-guide-target]').forEach(button=>{
+ button.addEventListener('click',()=>{
+  const target=document.querySelector(button.dataset.guideTarget);
+  if(!target)return;
+  target.scrollIntoView({behavior:motion(),block:'start'});
+  target.classList.remove('chapter-highlight');
+  void target.offsetWidth;
+  target.classList.add('chapter-highlight');
+  if(!target.hasAttribute('tabindex'))target.setAttribute('tabindex','-1');
+  target.focus({preventScroll:true});
+ });
+});
