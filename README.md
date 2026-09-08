@@ -1,41 +1,22 @@
-# 小白好白 科研作品集
+# 小白好白 · 研究与作品
 
-这是一个面向 GitHub Pages 的静态个人作品集网站，展示个人基本信息、研究方向、论文专利、项目经历、奖项证明、科研简历和时间线。
+白昱萱的个人作品集，发布于 https://bai9yu.github.io/portfolio/ 。
 
-## 内容结构
+首页以研究定位与代表作品为入口；项目页提供 PPT 图片轮播、可展开的项目贡献与研途喵功能预览；科研页区分会议论文、研究手稿和专利公开；荣誉页提供分类筛选与证书放大；关于我保留成长轨迹和简历入口。
 
-- `index.html`：作品集首页，只展示标题与 Personality
-- `about.html`：About Me、基本信息、联系方式、研究方向与科研简历预览
-- `publications.html`：论文与专利
-- `projects.html`：项目经历，包含科研智能体、研电赛与互联网+
-- `competitions.html`：旧竞赛入口，自动跳转至项目页
-- `awards.html`：奖项与证明轮播
-- `timeline.html`：时间线
-- `styles.css`：页面样式
-- `script.js`：About Me 科研简历展开与奖状轮播脚本
-- `assets/docs/`：科研简历 PDF
-- `assets/papers/`：FedTeddi、CATS 与论文证明
-- `assets/patents/`：专利证明材料
-- `assets/competitions/`：互联网+ 与研电赛材料
-- `assets/awards/`：奖项证明
-- `assets/awards-gallery/`：奖项证明图片轮播素材
-- `assets/project-extra/`：项目补充图片
-- `assets/videos/`：项目视频素材
-- `assets/thumbs/`：网页展示缩略图
+站点使用静态 HTML、CSS 和 JavaScript，可直接部署至 GitHub Pages，无需模型密钥。研途喵交互预览仅在当前页面演示，不连接或读取私有科研工作台。实际工作台链接需要授权登录。
 
-## 外部链接
+## 内容与媒体
 
-- 科研智能体项目展示页：https://bai9yu.github.io/research-assistant/
-- 科研智能体代码仓库：https://github.com/bai9yu/research-assistant
-- 联邦持续学习代码仓库：https://github.com/bai9yu/fed-continual-learning
+- 项目画面来自项目答辩 PPT。封面、系统演示、装置模型保留来源说明。
+- 天枢架构图为竞赛方案，演示画面属于软件仿真，不作为现场实测证明。
+- Sylvas 使用当前手稿名称，保留研究手稿及第二作者状态，不计为录用论文。
+- 奖项证明沿用原有公开资料。列表缩略图使用 WebP，点击后加载原图。
+- 论文实验数值保留方法、比较对象和适用设置，团队整体成果不计作个人成果。
+- 原始论文、证书及旧媒体资源继续保留，历史版本通过 Git 提交记录查看。
 
-## 发布建议
+## 交互与访问
 
-当前仓库建议使用 `bai9yu/portfolio` 发布 GitHub Pages：
+图片支持手动轮播、方向键与触摸滑动；自动播放需主动开启，可随时暂停。图片查看使用原生对话框，支持 Esc 关闭。项目和荣誉可筛选，研途喵预览支持键盘切换页签。所有动画尊重系统减少动态效果设置。
 
-- 仓库地址：https://github.com/bai9yu/portfolio
-- 页面地址：https://bai9yu.github.io/portfolio/
-
-GitHub Pages 设置路径：
-
-`Settings` → `Pages` → `Deploy from a branch` → `main` → `/root`
+直接打开 index.html，或使用静态文件服务器即可预览；无依赖安装和构建步骤。
