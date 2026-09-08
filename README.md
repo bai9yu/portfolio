@@ -24,3 +24,5 @@
 ## 全站样式
 
 五个主要页面统一使用 site.css。内页共享标题区、圆形视觉、导航、内容卡片、按钮、页脚与响应式规则。旧 timeline.html 跳转至 about.html#journey，competitions.html 跳转至 awards.html；不再维护重复页面。
+
+科研页展示 FedTeddi 论文 Fig. 1 系统图及 Sylvas 论文 Fig. 3 工作流程图，均可放大；专利方法以四步流程呈现。项目页提供补充在线作品展示入口。完整简历链接使用用户提供的最新 PDF 原件。
